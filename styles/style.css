@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../img/pixlr-bg-result.png) no-repeat, linear-gradient(to top, var(--color-banckground), #36dbd0);
+    background-size: contain;
+    background-position: bottom;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text);
+}
+
+:root{
+    --color-text: #212F3D;
+    --color-primary: #6e29b3;
+    --color-secondary: #01a5ae;
+    --color-secondary-dark: #006a6f;
+    --color-banckground: #4ecdc4;
+}
+
+.header{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.nav{    
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.nav__title{
+    font-weight: 600;
+}
+
+.nav__contenedor{    
+    display: flex;
+    align-items: center;    
+    column-gap: 1.5rem;
+}
+
+.nav__menu{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    justify-content:flex-end;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+.nav__enlace{
+    color: var(--color-secondary-dark);
+    text-decoration: none;    
+}
+
+.nav__enlace:hover{
+    color: var(--color-primary)
+}
+
+.nav__item:active, .nav__item:focus {
+    transform: scale(.9);
+}
+
+.nav__form{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav__sumbit{
+    background: url('../img/search.svg') no-repeat;
+    background-size: contain;
+    height:25px;
+    width: 25px;
+    border: none;
+    margin-left: -30px;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+.nav__search{
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary-dark);
+    padding: 5px;
+    font-family: 1.2rem;
+    outline: none;
+    visibility: hidden;
+    width: 10px;
+    transition: all 0.3s;
+}
+
+.nav__sumbit:hover ~ .nav__search, .nav__sumbit:active ~ .nav__search, .nav__sumbit:active ~ .nav__focus{
+    visibility: visible;
+    width: 150px
+}
+
+.nav__btn{
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: none;
+    border-radius: 19px;
+    background: linear-gradient(145deg, #9429ff, #6325a1);
+    box-shadow:  2px 2px 3px #29163ba1,
+             -2px -2px 3px #a557f3;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.tweets{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    height: 75vh;
+    max-width: 85%;
+    margin: 1rem auto;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2rem;
+}
+
+.tweets__contenedor{
+    display: grid;
+    align-content: center;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.tweets__img{
+    margin: 0rem auto;
+}
+
+.tweets__h1{
+    font-size: 1.8rem;    
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.tweets__agg{
+    resize: none;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.60 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.tweets__btn{
+    margin: 1rem auto;
+    width: 100px;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(145deg, #9429ff, #6325a1);
+    box-shadow:  2px 2px 3px #29163ba1,
+             -2px -2px 3px #a557f3;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.tweets__title{
+    text-align: center;
+}
+
+.tweets__result{
+    min-height: 3rem;
+    background: rgba( 110, 41, 179, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.0px );
+-webkit-backdrop-filter: blur( 4.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

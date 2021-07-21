@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tweets</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img class="nav__ico" src="img/ico-ico.png" alt="icono" height="50" >
+                <h2 class="nav__title">Logo Empresa</h2>
+            </div>
+            <div class="nav__contenedor">                
+            <ul class="nav__menu">
+                <li class="nav__item"> <a href="" class="nav__enlace">Inicio</a></li>
+                <li class="nav__item"> <a href="" class="nav__enlace">About Us</a></li>
+                <li class="nav__item"> <a href="" class="nav__enlace">Tweets</a></li>
+            </ul>
+            <form class="nav__form">
+                <button type="submit" class="nav__sumbit"></button>
+                <input class="nav__search" type="search" name="" id="">
+            </form>
+            <button class="nav__btn">
+                Contact
+            </button>
+            </div>
+        </nav>
+    </header>
+    <section class="tweets">        
+        <div class="tweets__contenedor">
+                <img src="img/calendario.png" class="tweets__img" alt="Imagen hero calendario" height="300">                
+                <h1 class="tweets__h1">Agreguemos un Tweet</h1>
+        <form class="tweets__form" action="" method="get">
+            <textarea class="tweets__agg" name="" id="" cols="" rows="3"></textarea>
+            <button class="tweets__btn" type="submit">Agregar</button>
+        </form>
+        </div>
+        <div class="tweets__tweets">
+            <h2 class="tweets__title">Tweets</h2>
+            <ul class="tweets__result"></ul>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+</html>
